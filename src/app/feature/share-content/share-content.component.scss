@@ -1,12 +1,20 @@
-.flex-item{
-    flex-grow: 1;
-    height: 230px;
+.flex-item {
+  flex-grow: 1;
+  height: 230px;
+  img {
+    margin: auto;
+    display: block;
+  }
+  p{
+      max-width: 57%;
+      margin: auto;
+  }
 }
 
-.red{
-    background: #ded534;
+.red {
+  background: #ded534;
 }
 
-.grey{
-    background: grey;
+.grey {
+  background: grey;
 }

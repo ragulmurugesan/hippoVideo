@@ -1,6 +1,7 @@
 <div class="flex-container">
-    <div class="flex-item red"></div>
-    <div class="flex-item grey"></div>
-    <div class="flex-item red"></div>
-    <div class="flex-item grey"></div>
+    <div class="flex-item" *ngFor="let item of shareFeaturesInfo">
+        <img src="../../../assets/share-content-icons/{{item.logo}}.png" alt="share" />
+        <h3 class="text-center">{{item.title}}</h3>
+        <p class="text-center">{{item.description}}</p>
+    </div>
 </div>
