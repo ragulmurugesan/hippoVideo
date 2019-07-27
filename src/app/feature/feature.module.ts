@@ -4,10 +4,12 @@ import { FeatureHeaderComponent } from './feature-header/feature-header.componen
 import { MainContentComponent } from './main-content/main-content.component';
 import { FeatureRoutingModule } from './feature-routing.module';
 import { FeaturesComponent } from './features.component';
+import { ShareContentComponent } from './share-content/share-content.component';
 
 @NgModule({
   declarations: [FeaturesComponent, FeatureHeaderComponent,
     MainContentComponent,
+    ShareContentComponent,
     ],
   imports: [
     CommonModule,

@@ -1,0 +1,24 @@
+.hv-tabs {
+    margin-top: 30px;
+    padding: 0 20px;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    box-shadow: 0px 10px 30px 0px rgba(19, 20, 18, 0.05);
+    button {
+        padding: 10px 90px;
+        background: none;
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+        border-bottom: 4px solid transparent;
+        &.active {
+            border-bottom-color: #f1795d;
+        }
+    }
+}
+
+.tab-content {
+    height: 500px;
+    margin-top: 70px;
+}

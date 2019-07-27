@@ -1,1 +1,20 @@
-<p>main-content works!</p>
+<section class="hv-tabs">
+    <ng-container *ngFor="let tab of tabInfo; let i = index">
+        <button id="tab-link" [ngClass]="{'active': i === selectedTabIndex}" (click)="onTabClick(i)">{{tab}}</button>
+    </ng-container>
+</section>
+
+<section class="tab-content">
+    <ng-container [ngSwitch]="selectedTabIndex">
+        <ng-container *ngSwitchCase="'0'">I am in 0</ng-container>
+        <ng-container *ngSwitchCase="'1'">I am in 1</ng-container>
+        <ng-container *ngSwitchCase="'2'">I am in 1</ng-container>
+        <ng-container *ngSwitchCase="'3'">
+            <app-share-content></app-share-content>
+        </ng-container>
+        <ng-container *ngSwitchCase="'4'">
+            I am coming from 4
+        </ng-container>
+        <ng-container *ngSwitchCase="'5'">I am in 1</ng-container>
+    </ng-container>
+</section>
