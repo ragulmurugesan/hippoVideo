@@ -1,12 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
-html{
+@import "./helpers";
+html {
     font-family: 'Open Sans', sans-serif !important;
 }
 
-.flex-container{
+body {
+    margin: 0px;
+}
+
+.flex-container {
     display: flex;
 }
 
-.flex-column{
+.flex-column {
     flex-direction: column;
 }
