@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+html{
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+.flex-container{
+    display: flex;
+}
+
+.flex-column{
+    flex-direction: column;
+}
