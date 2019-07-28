@@ -15,10 +15,12 @@
   display: flex;
   top: 0px;
   width: 100%;
+  z-index: 9;
   .hv-logo {
     flex: 1;
     img {
       height: 45px;
+      margin-top: 10px;
     }
     a {
       margin-left: 70px;
@@ -53,9 +55,18 @@
   }
 }
 
-.empty-container{
+.empty-container {
   height: 50px;
 }
-.navbar-container{
+.navbar-container {
   position: absolute;
+}
+
+.mbl-menu {
+  position: fixed;
+  top: 50px;
+  height: 200px;
+  width: 100%;
+  opacity: 0.5;
+  background: #000000;
 }

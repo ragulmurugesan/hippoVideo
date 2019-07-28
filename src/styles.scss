@@ -63,6 +63,10 @@ button:focus {
   margin-bottom: 20px;
 }
 
+.xm-menu-icon{
+  display: none;
+}
+
 /* Media queries */
 
 @media screen and (max-width: 535px) {
@@ -71,6 +75,14 @@ button:focus {
       flex-direction: column;
     }
   }
+  .nav-options, .hv-tabs{
+    display: none !important;
+  }
+  .xm-menu-icon{
+    display: inline;
+    margin: 10px 10px 0 0;
+  }
+
   .feature-header {
     // background-image: url(~/assets/background/feature-create-banner-img.png), url(~/assets/background/feature-banner.png);
     // background-repeat: no-repeat;
@@ -79,7 +91,7 @@ button:focus {
     // height: 806px;
     .header-content {
       // position: relative;
-      top: 264px !important;
+      top: 196px !important;
       left: 14px !important;
       h1 {
         // margin: 0;

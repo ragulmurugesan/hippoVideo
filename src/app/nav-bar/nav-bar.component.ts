@@ -8,14 +8,19 @@ import { Component, OnInit } from '@angular/core';
 export class NavBarComponent implements OnInit {
   navOptions: string[];
   activeNavIndex: number = 0;
+  displayMobileMenu: boolean = false;
   constructor() { }
 
   ngOnInit() {
     this.navOptions = ['Features', 'Resources', 'Solutions', 'Integrations', 'Pricing'];
   }
 
-  onNavClick(index){
+  onNavClick(index) {
     this.activeNavIndex = index;
+  }
+
+  toggleMobileMenu() {
+    this.displayMobileMenu = !this.displayMobileMenu;
   }
 
 }
