@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nav-bar.component.scss']
 })
 export class NavBarComponent implements OnInit {
-
+  navOptions: string[];
+  activeNavIndex: number = 0;
   constructor() { }
 
   ngOnInit() {
+    this.navOptions = ['Features', 'Resources', 'Solutions', 'Integrations', 'Pricing'];
+  }
+
+  onNavClick(index){
+    this.activeNavIndex = index;
   }
 
 }

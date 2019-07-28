@@ -1,1 +1,39 @@
-<p>footer works!</p>
+<section class="hv-footer">
+    <div class="footer-wrapper flex-container">
+        <div class="flex-item-1">
+            <h1 class="footer-content-heading">Platform</h1>
+            <ul class="platform-options l-style-none">
+                <li class="platform-options__element" *ngFor="let element of platformObj">
+                    <a>{{element}}</a>
+                </li>
+            </ul>
+        </div>
+        <div class="flex-item-1">
+            <h1 class="footer-content-heading">Top Features</h1>
+            <ul class="platform-options l-style-none">
+                <li class="platform-options__element" *ngFor="let element of topFeaturesObj">
+                    <a>{{element}}</a>
+                </li>
+            </ul>
+        </div>
+        <div class="flex-item-1">
+            <h1 class="footer-content-heading">Resources</h1>
+            <ul class="platform-options l-style-none">
+                <li class="platform-options__element" *ngFor="let element of resourcesObj">
+                    <a>{{element}}</a>
+                </li>
+            </ul>
+        </div>
+        <div class="flex-item-1">
+            <h1 class="footer-content-heading">Company</h1>
+            <ul class="platform-options l-style-none">
+                <li class="platform-options__element" *ngFor="let element of companyInfoObj">
+                    <a>{{element}}</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<section class="site-info text-center">
+    2018 - hippovideo.io, All Rights Reserved
+</section>

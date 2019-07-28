@@ -3,7 +3,7 @@
         <button id="tab-link" [ngClass]="{'active': i === selectedTabIndex}" (click)="onTabClick(i)">{{tab}}</button>
     </ng-container>
 </section>
-
+<!-- Contents to load based on the chosen tab -->
 <section class="tab-content">
     <ng-container [ngSwitch]="selectedTabIndex">
         <ng-container *ngSwitchCase="'0'">I am in 0</ng-container>
@@ -17,4 +17,16 @@
         </ng-container>
         <ng-container *ngSwitchCase="'5'">I am in 1</ng-container>
     </ng-container>
+</section>
+
+<!-- Bottom portion of the tab content -->
+<section id="main-content-bottom" class="main-content-bottom">
+    <div class="main-content-bottom__wrap">
+        <h1 class="h--margin-0">One tool for all your needs</h1>
+        <a id="get-started" class="btn-get-started2">
+            GET STARTED FOR FREE
+        </a>
+        <br />
+        <span>14-day Free Trial. No Credit Card Required.</span>
+    </div>
 </section>

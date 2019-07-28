@@ -1,0 +1,61 @@
+.nav-bar-1 {
+  position: absolute;
+  right: 0;
+  padding-top: 10px;
+  a {
+    padding: 0 10px;
+    color: #fff;
+  }
+}
+
+.nav-bar-2 {
+  position: sticky;
+  height: 60px;
+  background: #fff;
+  display: flex;
+  top: 0px;
+  width: 100%;
+  .hv-logo {
+    flex: 1;
+    img {
+      height: 45px;
+    }
+    a {
+      margin-left: 70px;
+    }
+  }
+  .nav-options {
+    flex: 2;
+    display: flex;
+    justify-content: space-around;
+    padding: 5px 5px 0px;
+    .start-create {
+      text-transform: uppercase;
+      cursor: pointer;
+      font-weight: 600;
+      padding: 15px 40px 15px 40px;
+      margin-bottom: 5px;
+      border-radius: 4px;
+      background: #f1795d;
+      color: #fff;
+    }
+    .nav-link-tab {
+      padding: 15px 40px 13px 40px;
+      color: #f1795d;
+      text-transform: uppercase;
+      font-weight: 600;
+      border-bottom: 4px solid transparent;
+      cursor: pointer;
+      &.active {
+        border-color: #f1795d;
+      }
+    }
+  }
+}
+
+.empty-container{
+  height: 50px;
+}
+.navbar-container{
+  position: absolute;
+}

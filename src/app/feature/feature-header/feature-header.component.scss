@@ -1,41 +1,25 @@
 .feature-header {
-    background-image: url(~/assets/background/feature-create-banner-img.png), url(~/assets/background/feature-banner.png);
-    background-repeat: no-repeat;
-    background-size: 33%, 73%;
-    background-position: 89% 68%, 122% -56px;
-    width: 100%;
-    height: 806px;
-    .header-content {
-        position: relative;
-        top: 344px;
-        left: 100px;
-        h1 {
-            margin: 0;
-            font-size: 30px;
-            font-weight: 400;
-            color: #050505;
-            line-height: 1.477;
-            letter-spacing: 0.2px;
-        }
-        p {
-            margin-top: 80px;
-            font-size: 20px;
-        }
-        .btn-get-started {
-            color: #fff;
-            font-size: 16px;
-            background-color: #f47a58;
-            background-image: -webkit-gradient(linear, left top, right top, from(#fb705e), to(#fb9c5a));
-            background-image: -webkit-linear-gradient(left, #fb705e, #fb9c5a);
-            background-image: linear-gradient(to right, #fb705e, #fb9c5a);
-            border-radius: 4px;
-            padding: 15px 40px 15px 40px;
-            display: inline-block;
-            margin-top: 45px;
-            margin-bottom: 20px;
-            &:hover {
-                background-image: linear-gradient(to right, #fb9c5a, #fb705e);
-            }
-        }
+  background-image: url(~/assets/background/feature-create-banner-img.png), url(~/assets/background/feature-banner.png);
+  background-repeat: no-repeat;
+  background-size: 33%, 73%;
+  background-position: 89% 68%, 122% -56px;
+  width: 100%;
+  height: 806px;
+  .header-content {
+    position: relative;
+    top: 344px;
+    left: 100px;
+    h1 {
+      margin: 0;
+      font-size: 30px;
+      font-weight: 400;
+      color: #050505;
+      line-height: 1.477;
+      letter-spacing: 0.2px;
     }
+    p {
+      margin-top: 80px;
+      font-size: 20px;
+    }
+  }
 }

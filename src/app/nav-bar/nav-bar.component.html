@@ -1,1 +1,22 @@
-<p>nav-bar works!</p>
+<nav class="nav-bar-1">
+    <a class="nav-link">What's New</a>
+    <a class="nav-link">FAQ</a>
+    <a class="nav-link">Blog</a>
+    <a class="nav-link">Login</a>
+</nav>
+<div class="empty-container"></div>
+<nav class="nav-bar-2">
+    <div class="hv-logo">
+        <a>
+            <img src="../../assets/hv-logo/hippo-video-logo.svg">
+        </a>
+    </div>
+    <div class="nav-options">
+        <a class="nav-link-tab" [ngClass]="{'active': activeNavIndex == i}"
+            *ngFor="let nav of navOptions; let i = index" (click)="onNavClick(i)">
+            {{nav}}
+        </a>
+
+        <a class="start-create">Start creating</a>
+    </div>
+</nav>
