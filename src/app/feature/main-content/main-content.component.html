@@ -1,9 +1,10 @@
+<!-- Tabs -->
 <section class="hv-tabs">
     <ng-container *ngFor="let tab of tabInfo; let i = index">
         <button id="tab-link" [ngClass]="{'active': i === selectedTabIndex}" (click)="onTabClick(i)">{{tab}}</button>
     </ng-container>
 </section>
-<!-- Contents to load based on the chosen tab -->
+<!-- Tab Contents to load based on the chosen tab -->
 <section class="tab-content">
     <ng-container [ngSwitch]="selectedTabIndex">
         <ng-container *ngSwitchCase="'3'">
@@ -19,7 +20,7 @@
 <section id="main-content-bottom" class="main-content-bottom">
     <div class="main-content-bottom__wrap">
         <h1 class="h--margin-0">One tool for all your needs</h1>
-        <a id="get-started" class="btn-get-started2">
+        <a id="get-started" class="btn-secondary">
             GET STARTED FOR FREE
         </a>
         <br />

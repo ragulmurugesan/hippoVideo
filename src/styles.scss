@@ -35,7 +35,7 @@ button:focus {
   outline: 0;
 }
 
-.btn-get-started {
+.btn-primary {
   color: #fff;
   font-size: 16px;
   background-color: #f47a58;
@@ -52,7 +52,7 @@ button:focus {
   }
 }
 
-.btn-get-started2 {
+.btn-secondary {
   color: #f47a58;
   font-size: 16px;
   background-color: #fff;
@@ -63,7 +63,7 @@ button:focus {
   margin-bottom: 20px;
 }
 
-.xm-menu-icon{
+.xm-menu-icon {
   display: none;
 }
 
@@ -75,10 +75,11 @@ button:focus {
       flex-direction: column;
     }
   }
-  .nav-options, .hv-tabs{
+  .nav-options,
+  .hv-tabs {
     display: none !important;
   }
-  .xm-menu-icon{
+  .xm-menu-icon {
     display: inline;
     margin: 10px 10px 0 0;
   }
@@ -89,7 +90,7 @@ button:focus {
     background-size: 28%, 81% !important;
     background-position: 90% 12%, 144% -21px !important;
     // height: 806px;
-    .header-content {
+    .feature-header__content {
       // position: relative;
       top: 196px !important;
       left: 14px !important;
@@ -101,7 +102,7 @@ button:focus {
         // line-height: 1.477;
         // letter-spacing: 0.2px;
       }
-      .btn-get-started {
+      .btn-primary {
         color: #fff;
         font-size: 16px;
         background-color: #f47a58;
@@ -117,6 +118,29 @@ button:focus {
           background-image: linear-gradient(to right, #fb9c5a, #fb705e);
         }
       }
+    }
+  }
+}
+/* Table device - landscape media query */
+
+@media screen and (min-width: 1025px) and (max-width: 1366px) {
+  .nav-options {
+    .nav-options__create {
+      white-space: pre;
+    }
+    .nav-options__button {
+      padding: 15px 24px 13px 40px;
+    }
+  }
+}
+
+@media screeen and (max-width: 1024px) {
+  .nav-options {
+    .nav-options__create {
+      white-space: pre;
+    }
+    .nav-options__button {
+      padding: 15px 10px;
     }
   }
 }

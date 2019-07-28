@@ -6,24 +6,25 @@
 </nav> -->
 <!-- <div class="empty-container"></div> -->
 <nav class="nav-bar-2">
-    <div class="hv-logo">
+    <div class="nav-bar-2__hv-logo">
         <a>
             <img src="../../assets/hv-logo/hippo-video-logo.svg">
         </a>
     </div>
+
     <div class="nav-options">
-        <a class="nav-link-tab" [ngClass]="{'active': activeNavIndex == i}"
+        <a class="nav-options__button" [ngClass]="{'active': activeNavIndex == i}"
             *ngFor="let nav of navOptions; let i = index" (click)="onNavClick(i)">
             {{nav}}
         </a>
-
-        <a class="start-create">Start creating</a>
+        <a class="nav-options__create">Start creating</a>
     </div>
-    <!-- nav bar for mobile view -->
+
+    <!-- nav bar for mobile view. Still under construction -->
     <span class="xm-menu-icon" (click)="toggleMobileMenu()">
         <i class="fa fa-bars"></i>
     </span>
     <div *ngIf="displayMobileMenu" class="mbl-menu">
-        Dummy link
+        Placeholder
     </div>
 </nav>

@@ -6,13 +6,24 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent implements OnInit {
-  platformObj: string[];
-  topFeaturesObj: string[];
-  resourcesObj: string[];
-  companyInfoObj: string[];
+  public platformObj: string[];
+  public topFeaturesObj: string[];
+  public resourcesObj: string[];
+  public companyInfoObj: string[];
+
   constructor() { }
 
+  /**
+   * Angular life cycle hook that renders when the component is initialized
+   */
   ngOnInit() {
+    this.initializeFooterEntities();
+  }
+
+  /**
+   * Initializes the data needed for the component 
+   */
+  initializeFooterEntities() {
     this.platformObj = [
       'Video Actions',
       'Video hosting',

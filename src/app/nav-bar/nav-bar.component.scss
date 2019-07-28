@@ -9,15 +9,15 @@
 }
 
 .nav-bar-2 {
-  position: sticky;
-  height: 60px;
-  background: #fff;
-  box-shadow: 0 0 3px 0 rgba(0,0,0,0.2);
   display: flex;
+  position: sticky;
   top: 0px;
+  height: 60px;
   width: 100%;
   z-index: 9;
-  .hv-logo {
+  background: #fff;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
+  .nav-bar-2__hv-logo {
     flex: 1;
     img {
       height: 45px;
@@ -32,9 +32,8 @@
     display: flex;
     justify-content: space-around;
     padding: 5px 5px 0px;
-    .start-create {
+    .nav-options__create {
       text-transform: uppercase;
-      cursor: pointer;
       font-weight: 600;
       padding: 15px 40px 15px 40px;
       margin-bottom: 5px;
@@ -42,13 +41,12 @@
       background: #f1795d;
       color: #fff;
     }
-    .nav-link-tab {
+    .nav-options__button {
       padding: 15px 40px 13px 40px;
       color: #f1795d;
       text-transform: uppercase;
       font-weight: 600;
       border-bottom: 4px solid transparent;
-      cursor: pointer;
       &.active {
         border-color: #f1795d;
       }
@@ -59,6 +57,7 @@
 .empty-container {
   height: 50px;
 }
+
 .navbar-container {
   position: absolute;
 }
