@@ -1,13 +1,20 @@
-.flex-item {
-  flex-grow: 1;
-  height: 230px;
-  img {
-    margin: auto;
-    display: block;
-  }
-  p{
-      max-width: 57%;
+.share-features-container {
+  margin: 0px 40px 40px 50px;
+  .flex-item {
+    flex-grow: 1;
+
+    img {
       margin: auto;
+      display: block;
+    }
+    p {
+      max-width: 60%;
+      margin: auto;
+      line-height: 24px;
+    }
+    &.share-features-container__item {
+      height: 230px;
+    }
   }
 }
 
@@ -17,4 +24,106 @@
 
 .grey {
   background: grey;
+}
+
+.video-privacy {
+  height: 620px;
+  > div {
+    flex: 1;
+  }
+  .video-privacy__desc {
+    max-width: 50%;
+    padding-left: 20px;
+    .heading {
+      font-size: 30px;
+      line-height: 1.6;
+      letter-spacing: 0.2px;
+    }
+    > div {
+      max-width: 75%;
+      padding: 100px 0px 0px 18px;
+    }
+    .desc {
+      font-size: 18px;
+      line-height: 38px;
+    }
+  }
+  .video-privacy__img {
+    max-width: 50%;
+    .share-feature-vid {
+      max-width: 70%;
+      margin: auto;
+      position: relative;
+      transform: rotate(-3deg);
+      img {
+        max-width: 100%;
+        box-shadow: 0px 12px 30.45px 4.55px rgba(0, 0, 0, 0.1);
+        // position: absolute;
+      }
+      .share-feature-vid__bg {
+        box-shadow: none;
+        position: relative;
+        height: 520px;
+      }
+      .share-feature-vid_layout {
+        top: 42px;
+        left: -2px;
+      }
+      .share-feature-vid__video-1 {
+        left: 16px;
+        top: 106px;
+      }
+      .share-feature-vid__img-1 {
+        top: 142px;
+        left: 16px;
+      }
+      .share-feature-vid__video-2 {
+        top: 168px;
+        width: 70%;
+        right: -25px;
+      }
+      .tools-header {
+        top: 48px;
+        text-align: center;
+        width: 300px;
+        padding: 12px 0px;
+
+        img {
+          height: 25px;
+          box-shadow: none;
+        }
+      }
+      .tools-entity {
+        position: absolute;
+        background: #fff;
+        border-radius: 6px;
+        left: 108px;
+        box-shadow: 0px 19px 19.74px 1.26px rgba(90, 148, 254, 0.11);
+      }
+      .tools-container {
+        top: 113px;
+        width: 242px;
+        padding: 30px;
+        > div {
+          margin: 10px 0;
+          border: 1px solid rgba(0, 0, 0, 0.1);
+          border-radius: 5px;
+          padding: 4px 0px;
+          text-align: center;
+        }
+        img {
+          height: 23px;
+          position: static;
+          margin-top: 4px;
+          box-shadow: none;
+        }
+      }
+    }
+  }
+}
+
+.integrations-heading {
+  font-size: 26px;
+  font-weight: 400;
+  text-align: center;
 }

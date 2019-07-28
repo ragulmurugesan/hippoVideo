@@ -7,6 +7,10 @@ body {
     margin: 0px;
 }
 
+h1, h3{
+    text-transform: capitalize;
+}
+
 .flex-container {
     display: flex;
 }

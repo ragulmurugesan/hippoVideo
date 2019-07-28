@@ -1,7 +1,89 @@
-<div class="flex-container">
-    <div class="flex-item" *ngFor="let item of shareFeaturesInfo">
+<div class="flex-container share-features-container">
+    <div class="flex-item share-features-container__item" *ngFor="let item of shareFeaturesInfo">
         <img src="../../../assets/share-content-icons/{{item.logo}}.png" alt="share" />
         <h3 class="text-center">{{item.title}}</h3>
         <p class="text-center">{{item.description}}</p>
+    </div>
+</div>
+
+<!-- Share content - 1 -->
+
+<div id="div-video-privacy" class="flex-container video-privacy">
+    <div class="video-privacy__img">
+        <div class="share-feature-vid">
+            <img class="img-responsive share-feature-vid__bg" src="/assets/background/ellipse-6.png">
+            <img class="p-absolute img-responsive share-feature-vid_layout"
+                src="/assets/background/customize-img-1.png">
+            <img class="p-absolute abs share-feature-vid__video-1 bounceIn animated"
+                src="/assets/background/share-img-1.png" alt="Share videos protected with password"
+                title="Share videos protected with password">
+            <img class="p-absolute abs img-responsive share-feature-vid__img-1"
+                src="/assets/background/create-gif-ss.png">
+            <img class="p-absolute abs share-feature-vid__video-2 bounceIn animated"
+                src="/assets/background/Privacy-ss.png" alt="Share videos protected with password"
+                title="Share videos protected with password">
+        </div>
+    </div>
+    <div class="video-privacy__desc">
+        <div>
+            <p class="heading h--margin-0 text-capitalize">Protect and control your videos with privacy</p>
+            <p class="desc">Share videos by protecting them with a password.
+                Control who can access your videos. Set an expiry
+                date for the shared video link.</p>
+        </div>
+    </div>
+</div>
+
+<h1 class="integrations-heading">Integrations</h1>
+
+<!-- Share content - 2 -->
+
+<div id="div-video-privacy" class="flex-container video-privacy">
+    <div class="video-privacy__desc">
+        <div>
+            <p class="heading h--margin-0 text-capitalize">Smart Integrations</p>
+            <p class="desc">Record videos from where you are without having to switch apps. Integrates with Gmail,
+                Google Suite, D2L and lots.</p>
+        </div>
+    </div>
+    <div class="video-privacy__img">
+        <div class="share-feature-vid">
+            <img class="img-responsive share-feature-vid__bg" src="/assets/background/ellipse-6.png">
+            <div class="tools-header tools-entity">
+                <img src="/assets/share-content-icons/fe-jira.png" />
+            </div>
+            <div class="tools-container tools-entity">
+                <div class="tools-container__img-holder" *ngFor="let element of integrationInfo">
+                    <img src="/assets/share-content-icons/{{element}}.png" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Share content - 3 -->
+
+<div id="div-video-privacy" class="flex-container video-privacy">
+    <div class="video-privacy__img">
+        <div class="share-feature-vid">
+            <img class="img-responsive share-feature-vid__bg" src="/assets/background/ellipse-6.png">
+            <div class="tools-header tools-entity">
+                <img src="/assets/share-content-icons/fe-jira.png" />
+            </div>
+            <div class="tools-container tools-entity">
+                <div class="tools-container__img-holder" *ngFor="let element of integrationInfo">
+                    <img src="/assets/share-content-icons/{{element}}.png" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="video-privacy__desc">
+        <div>
+            <p class="heading h--margin-0 text-capitalize">Marketplace Integrations</p>
+            <p class="desc">Hippo Video offers tons of business integrations
+                to choose from. Contextually integrated with
+                Gmail, Intercom, Salesforce, Slack, Trello,
+                Freshdesk, Zendesk, & so on.</p>
+        </div>
     </div>
 </div>
