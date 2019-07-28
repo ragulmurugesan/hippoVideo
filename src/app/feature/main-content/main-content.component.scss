@@ -20,6 +20,7 @@
 
 .tab-content {
   margin-top: 12em;
+  position: relative;
 }
 
 .main-content-bottom {
@@ -33,4 +34,10 @@
       color: #fff;
     }
   }
+}
+
+.tab-placeholder-msg {
+  position: absolute;
+  top: -8em;
+  left: 40%;
 }

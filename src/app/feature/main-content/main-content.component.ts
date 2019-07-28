@@ -8,10 +8,12 @@ import { Component, OnInit } from '@angular/core';
 export class MainContentComponent implements OnInit {
   public selectedTabIndex: number = 3;
   public tabInfo: any;
+  public msg: string;
   constructor() { }
 
   ngOnInit() {
     this.tabInfo = ['Create', 'Edit', 'Customize', 'Share', 'Analyze', 'Engage'];
+    this.msg = ''
   }
 
   onTabClick(i){
