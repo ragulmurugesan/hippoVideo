@@ -1,4 +1,4 @@
-@import "../../animation";
+@import "../../utils/scss/animation";
 
 .share-features-container {
   margin: 0px 40px 40px 50px;
@@ -56,7 +56,7 @@
       max-width: 70%;
       margin: auto;
       position: relative;
-      transform: rotate(-4deg);
+     // transform: rotate(-4deg);
       img {
         max-width: 100%;
         box-shadow: 0px 12px 30.45px 4.55px rgba(0, 0, 0, 0.1);
@@ -141,6 +141,11 @@
   text-align: center;
 }
 
+.transform-tilt{
+  transform: rotate(-4deg);
+}
+
+
 /* Animation */
 
 .animate-1 {
@@ -154,7 +159,7 @@
 .animate-2 {
   &.animate-stack {
     animation-name: dip;
-    animation-duration: 4s;
+    animation-duration: 2s;
     animation-fill-mode: forwards;
   }
 }
@@ -162,7 +167,7 @@
 .animate-3 {
   &.animate-stack {
     animation-name: dip;
-    animation-duration: 4s;
+    animation-duration: 2s;
     animation-fill-mode: forwards;
   }
 }

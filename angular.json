@@ -32,7 +32,7 @@
               "src/assets/icons/fontawesome/css/all.min.css",
               "src/assets/icons/fontawesome/css/fontawesome.min.css"
             ],
-            "scripts": ["src/app/utils/animation.js"]
+            "scripts": ["src/app/utils/js/animation.js"]
           },
           "configurations": {
             "production": {

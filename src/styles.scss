@@ -1,6 +1,9 @@
 @import "./helpers";
+@import "./app/utils/scss/mediaquery";
+
 html {
   font-family: "Open Sans", sans-serif !important;
+  font-size: 16px;
 }
 
 body {
@@ -65,82 +68,4 @@ button:focus {
 
 .xm-menu-icon {
   display: none;
-}
-
-/* Media queries */
-
-@media screen and (max-width: 535px) {
-  .tab-content {
-    .flex-container {
-      flex-direction: column;
-    }
-  }
-  .nav-options,
-  .hv-tabs {
-    display: none !important;
-  }
-  .xm-menu-icon {
-    display: inline;
-    margin: 10px 10px 0 0;
-  }
-
-  .feature-header {
-    // background-image: url(~/assets/background/feature-create-banner-img.png), url(~/assets/background/feature-banner.png);
-    // background-repeat: no-repeat;
-    background-size: 28%, 81% !important;
-    background-position: 90% 12%, 144% -21px !important;
-    // height: 806px;
-    .feature-header__content {
-      // position: relative;
-      top: 196px !important;
-      left: 14px !important;
-      h1 {
-        // margin: 0;
-        font-size: 24px !important;
-        // font-weight: 400;
-        // color: #050505;
-        // line-height: 1.477;
-        // letter-spacing: 0.2px;
-      }
-      .btn-primary {
-        color: #fff;
-        font-size: 16px;
-        background-color: #f47a58;
-        background-image: -webkit-gradient(linear, left top, right top, from(#fb705e), to(#fb9c5a));
-        background-image: -webkit-linear-gradient(left, #fb705e, #fb9c5a);
-        background-image: linear-gradient(to right, #fb705e, #fb9c5a);
-        border-radius: 4px;
-        padding: 15px 40px 15px 40px;
-        display: inline-block;
-        margin-top: 45px;
-        margin-bottom: 20px;
-        &:hover {
-          background-image: linear-gradient(to right, #fb9c5a, #fb705e);
-        }
-      }
-    }
-  }
-}
-/* Table device - landscape media query */
-
-@media screen and (min-width: 1025px) and (max-width: 1366px) {
-  .nav-options {
-    .nav-options__create {
-      white-space: pre;
-    }
-    .nav-options__button {
-      padding: 15px 24px 13px 40px;
-    }
-  }
-}
-
-@media screeen and (max-width: 1024px) {
-  .nav-options {
-    .nav-options__create {
-      white-space: pre;
-    }
-    .nav-options__button {
-      padding: 15px 10px;
-    }
-  }
 }
