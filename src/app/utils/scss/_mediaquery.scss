@@ -48,12 +48,9 @@
 
 @media screen and (min-width: 1025px) and (max-width: 1366px) {
   html {
-    font-size: 14px !important;
+    font-size: 14px;
   }
   .nav-options {
-    .nav-options__create {
-      white-space: pre;
-    }
     .nav-options__button {
       padding: 15px 24px 13px 40px;
     }
@@ -63,15 +60,55 @@
 /* Table screen - landscape media query */
 @media screen and (max-width: 1024px) {
   html {
-    font-size: 14px !important;
+    font-size: 14px;
   }
   .nav-options {
-    .nav-options__create {
-      white-space: pre;
-    }
     .nav-options__button {
       padding: 15px 10px;
       font-size: 0.8rem;
     }
+  }
+
+  .feature-header {
+    background-position: 89% 30%, 122% -56px;
+    height: 34rem;
+    .feature-header__content {
+      left: 3rem;
+      top: 12rem;
+      h1 {
+        font-size: 1.4rem;
+      }
+    }
+  }
+
+  .tools-entity {
+    left: 2rem;
+  }
+}
+@media screen and (min-width: 1366px) {
+  html {
+    font-size: 16px;
+  }
+  .nav-options {
+    .nav-options__button {
+      padding: 15px 0px;
+      font-size: 1rem;
+    }
+  }
+
+  .feature-header {
+    background-position: 89% 68%, 122% -56px;
+    height: 57rem;
+    .feature-header__content {
+      top: 22rem;
+      left: 6rem;
+      h1 {
+        font-size: 1.7rem;
+      }
+    }
+  }
+
+  .tools-entity {
+    left: 7rem;
   }
 }

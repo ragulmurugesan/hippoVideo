@@ -31,21 +31,19 @@
     flex: 2;
     display: flex;
     justify-content: space-around;
-    // padding: 5px 5px 0px;
+
     .nav-options__create {
       text-transform: uppercase;
       font-weight: 600;
       padding: 15px 40px 15px 40px;
-      margin: 5px 0px;
+      margin: 5px 5px 5px 0px;
       border-radius: 4px;
       background: #f1795d;
       color: #fff;
     }
     .nav-options__button {
-      font-size: 1rem;
       text-align: center;
       flex: 1;
-      padding: 15px 0px;
       font-weight: 600;
       color: #f1795d;
       text-transform: uppercase;
