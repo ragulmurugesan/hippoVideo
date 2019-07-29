@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainContentComponent implements OnInit {
   public selectedTabIndex: number = 3;
-  public tabInfo: any;
+  public tabInfo: string[];
   public msg: string;
   constructor() { }
 

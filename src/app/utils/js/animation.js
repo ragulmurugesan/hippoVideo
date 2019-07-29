@@ -19,7 +19,7 @@ window.addEventListener('scroll', () => {
  * Method to perform animation
  */
 
-function animate(el1, el2, el3, ) {
+function animate(el1, el2, el3) {
     if (isInViewPort(el1)) {
         el1.classList.add('animate-thumb');
     }
