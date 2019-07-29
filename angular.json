@@ -28,11 +28,11 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss",
-              "src/assets/icons/fontawesome/css/all.min.css",
-              "src/assets/icons/fontawesome/css/fontawesome.min.css"
+              "src/styles.scss"
             ],
-            "scripts": ["src/app/utils/js/animation.js"]
+            "scripts": [
+              "src/app/utils/js/animation.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -90,8 +90,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss",
-              "/assets/icons/fontawesome/css/fontawesome.min.css"
+              "src/styles.scss"
             ],
             "scripts": []
           }
@@ -122,6 +121,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "hippoVideo"
 }
