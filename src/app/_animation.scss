@@ -1,10 +1,4 @@
 @keyframes thumbnail-flicker {
-  // from {
-  //   transform: rotate(0deg);
-  // }
-  // to {
-  //   transform: rotate(-3deg);
-  // }
   0% {
     transform: rotate(0deg);
   }
@@ -13,5 +7,23 @@
   }
   100% {
     transform: rotate(-3deg);
+  }
+}
+
+@keyframes roll-down {
+  from {
+    height: 5px;
+  }
+  to {
+    height: auto;
+  }
+}
+
+@keyframes dip {
+  from {
+    z-index: 2;
+  }
+  to {
+    z-index: 0;
   }
 }
