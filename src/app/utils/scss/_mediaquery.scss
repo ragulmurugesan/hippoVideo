@@ -1,11 +1,13 @@
 /* Mobile screen */
 
 @media screen and (max-width: 535px) {
-  .tab-content {
-    .flex-container {
-      flex-direction: column;
-    }
+  html {
+    font-size: 12px;
   }
+  .flex-container {
+    flex-direction: column;
+  }
+
   .nav-options,
   .hv-tabs {
     display: none !important;
@@ -16,29 +18,20 @@
   }
 
   .feature-header {
-    background-size: 28%, 81% !important;
-    background-position: 90% 12%, 144% -21px !important;
+    background: none !important;
+    height: 30rem;
     .feature-header__content {
-      top: 196px !important;
-      left: 14px !important;
+      top: 1rem;
+      left: 1rem;
       h1 {
-        font-size: 24px !important;
+        font-size: 1.5rem;
+      }
+      p {
+        font-size: 1.3rem;
+        margin: 1.3rem 0rem;
       }
       .btn-primary {
-        color: #fff;
-        font-size: 16px;
-        background-color: #f47a58;
-        background-image: -webkit-gradient(linear, left top, right top, from(#fb705e), to(#fb9c5a));
-        background-image: -webkit-linear-gradient(left, #fb705e, #fb9c5a);
-        background-image: linear-gradient(to right, #fb705e, #fb9c5a);
-        border-radius: 4px;
-        padding: 15px 40px 15px 40px;
-        display: inline-block;
-        margin-top: 45px;
-        margin-bottom: 20px;
-        &:hover {
-          background-image: linear-gradient(to right, #fb9c5a, #fb705e);
-        }
+        margin-bottom: 0.8rem;
       }
     }
   }
@@ -55,10 +48,29 @@
       padding: 15px 24px 13px 40px;
     }
   }
+  .feature-header {
+    background-position: 89% 30%, 122% -56px;
+    height: 34rem;
+    .feature-header__content {
+      left: 3rem;
+      top: 12rem;
+      h1 {
+        font-size: 1.4rem;
+      }
+      p {
+        font-size: 1.3rem;
+        margin: 1.3rem 0rem;
+      }
+      .btn-primary {
+        margin-bottom: 1rem;
+      }
+    }
+  }
 }
 
 /* Table screen - landscape media query */
-@media screen and (max-width: 1024px) {
+
+@media screen and (min-width: 535px) and (max-width: 1024px) {
   html {
     font-size: 14px;
   }
@@ -78,6 +90,13 @@
       h1 {
         font-size: 1.4rem;
       }
+      p {
+        font-size: 1.3rem;
+        margin: 1.3rem 0rem;
+      }
+      .btn-primary {
+        margin-bottom: 1rem;
+      }
     }
   }
 
@@ -85,6 +104,9 @@
     left: 2rem;
   }
 }
+
+/* Any monitor beyond 1366px of width*/
+
 @media screen and (min-width: 1366px) {
   html {
     font-size: 16px;
@@ -104,6 +126,13 @@
       left: 6rem;
       h1 {
         font-size: 1.7rem;
+      }
+      p {
+        font-size: 1.3rem;
+        margin: 1.3rem 0rem;
+      }
+      .btn-primary {
+        margin-bottom: 1rem;
       }
     }
   }

@@ -3,7 +3,6 @@
 
 html {
   font-family: "Open Sans", sans-serif !important;
-  font-size: 16px;
 }
 
 body {
@@ -38,6 +37,7 @@ button:focus {
   outline: 0;
 }
 
+/* Common styles */
 .btn-primary {
   color: #fff;
   font-size: 16px;
@@ -48,8 +48,8 @@ button:focus {
   border-radius: 4px;
   padding: 15px 40px 15px 40px;
   display: inline-block;
-  margin-top: 45px;
-  margin-bottom: 20px;
+  // margin-top: 45px;
+  // margin-bottom: 20px;
   &:hover {
     background-image: linear-gradient(to right, #fb9c5a, #fb705e);
   }
